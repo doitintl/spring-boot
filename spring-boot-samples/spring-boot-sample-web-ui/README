@@ -1,1 +1,11 @@
-*TEST*
+*Spring Boot Example Deployable to AppEngine Flex Env*
+
+*Prerequisites*
+[Google Cloud SDK Installed](https://cloud.google.com/sdk)
+gcloud auth login
+gcloud config set project [project_id]
+
+Steps to Deploy Application:
+mvn compile
+mvn install
+mvn gcloud:deploy
